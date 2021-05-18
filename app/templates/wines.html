@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+<!-- Wine Grid -->
+<section class="bg-light" id="wines">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading ">From The Western cape, South Africa</h2>
+                <h3 class="section-subheading text-muted">Our Premium quality wines are produced in the famous Western
+                    Cape wine region of South Africa. The produce is from a coastal micro climate around Cape town
+                    and its famous Table Mountain. With personal attention from the vine to our bottle, our exquisite
+                    wine is produced from only naturally ripened grapes which has allowed our producers to maintain
+                    excellent constant quality and character of our wines through more than 100 years of production
+                    history.</h3>
+            </div>
+        </div>
+        <div class="row wine-margin">
+
+            <div class="col-md-12 portfolio-item">
+                <div class="wine-item-margin">
+                    <a class="portfolio-link" data-toggle="modal" href="#wineModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid wines-img-thumb" src="{% static '/img/wines/winephoto2.JPG'%}" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Wes Kaap Chenin Blanc</h4>
+                        <!-- <p class="text-muted">Short Description</p>-->
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-12 portfolio-item">
+                <div class="wine-item-margin">
+                    <a class="portfolio-link" data-toggle="modal" href="#wineModal4">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid wines-img-thumb" src="{% static '/img/wines/winerooi.JPG'%}" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Rooi Liefde</h4>
+                        <!--<p class="text-muted">Short Description</p>-->
+                    </div>
+                </div>
+            </div>
+            <img class="img-fluid logo" src="{% static '/img/logo/logo.png'%}" alt="">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading ">From Argentina</h2>
+                    <h3 class="section-subheading text-muted">This wine is made in the famous MENDOZA area of Argentina
+                        where high altitude viticulture is seen. Every aspect of this wine is unique especially to the
+                        taste buds.</h3>
+                </div>
+            </div>
+            <div class="col-md-12 portfolio-item wine-margin">
+                <div class="wine-item-margin">
+                    <a class="portfolio-link" data-toggle="modal" href="#wineModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid wines-img-thumb" src="{% static '/img/wines/amor_blanco.jpg'%}" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Amor Blanco</h4>
+                        <!--<p class="text-muted">Short Description</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block afterfooter %}
+
+<!-- Wine Modals -->
+<!-- Modal 2 -->
+<div class="portfolio-modal modal fade" id="wineModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="">Wes Kaap Chenin Blanc</h2>
+                            <!--  <p class="item-intro text-muted">Taste Here</p>-->
+                            <img class="img-fluid d-block mx-auto modalwine"
+                                 src="{% static '/img/wines/winephoto2.JPG'%}"
+                                 alt="">
+                            <p>Unparalleled in smoothness our Chenin is by far superior to any current equivalent
+                                available in the market with a very easy-to-drink feeling while you appreciate the
+                                perfect taste. It’s decent alcohol strength can be deceived by the smoothness .</p>
+                            <ul class="list-inline">
+                                <!--<li>Date: January 2017</li>
+                                <li>Alcohol: 30%</li>-->
+                                <li>Category: White</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fa fa-times"></i>
+                                Go Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="portfolio-modal modal fade" id="wineModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="">Rooi Liefde</h2>
+                            <!--<p class="item-intro text-muted">Taste Here</p>-->
+                            <img class="img-fluid d-block mx-auto modalwine" src="{% static '/img/wines/winerooi.JPG'%}"
+                                 alt="">
+                            <p>Red at its best in texture, taste, colour and quality. Exclusive tastes that are
+                                difficult to miss.</p>
+                            <ul class="list-inline">
+                                <!--<li>Date: January 2017</li>
+                                <li>Alcohol: 30%</li>-->
+                                <li>Category: Red</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fa fa-times"></i>
+                                Go Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="portfolio-modal modal fade" id="wineModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="">Amor Blanco</h2>
+                            <!--<p class="item-intro text-muted">Taste Here</p>-->
+                            <img class="img-fluid d-block mx-auto modalwine"
+                                 src="{% static '/img/wines/amor_blanco.jpg'%}"
+                                 alt="">
+                            <p>This wine is made in the famous MENDOZA area of Argentina where high altitude viticulture
+                                is seen. Every aspect of this wine is unique especially to the taste buds.</p>
+                            <ul class="list-inline">
+                                <!-- <li>Date: January 2017</li>
+                                 <li>Alcohol: 30%</li>-->
+                                <li>Category: White</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fa fa-times"></i>
+                                Go Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
