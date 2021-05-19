@@ -8,7 +8,6 @@ body {
     font-family: "mrs-eaves";
   /*font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   background-color:#212529;
-  min-height: 100vh;
 }
 
 p {
@@ -40,7 +39,6 @@ h6 {
 
 section {
   padding: 45px 0;
-  min-height: 53vh;
 }
 .nounderline{
 text-decoration:none;}
@@ -344,13 +342,13 @@ header.masthead {
     header.masthead {
         margin-left: 15%;
         margin-right: 15%;
-        height: 40vh;
+        height: 50vh;
     }
 }
 @media (min-width: 2000px) {
     header.masthead {
 
-        height: 40vh;
+        height: 50vh;
 
     }
 }

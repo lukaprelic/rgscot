@@ -9,11 +9,11 @@ from rgscot import settings
 
 logger = logging.getLogger('views')
 context = {
-    'navigation': {'Home':[]#,'Products': [{'WINE COOLERS / SPRITZERS': 'Wine Coolers Spritzers'}, {'WINES': 'wines'}], 'About Us': [],'Contact Us': []
-                   }}
+    'navigation': {'Home':[],'Products': [{'WINE COOLERS / SPRITZERS': 'Wine Coolers Spritzers'}, {'WINES': 'wines'}], 'About Us': [],
+                   'Contact Us': []}}
 
 def index(request):
-    return render(request, 'disabled.html', {'nav': context})
+    return render(request, 'index.html', {'nav': context})
 def wines(request):
     return render(request, 'wines.html', {'nav': context})
 def winecoolers(request):
