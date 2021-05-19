@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 's!3lga%l#7+%3g=twor*352(77)++k5r_o7ce_uwcj)7&4)c3!'
 SENDGRID_API_KEY = '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'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
