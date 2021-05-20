@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+
+<section class="bg-light backgroundlogo" id="portfolio">
+    <div class="container">
+        <div class="">
+
+            <div class=" text-center">
+
+                <img class="img-fluid logo" src="{% static '/img/logo/logo.png'%}" alt="">
+
+
+
+                <a class="nounderline" href="{% url 'wines' %}">
+                    <h2 class="section-heading section-heading-margin">Our Wines</h2>
+                    <h3 class="section-subheading text-muted">
+                        Our wines are chosen from producers who ensure their wines are made only from naturally ripened
+                        grapes.
+                        This allows appreciation of distinctive tastes consistently.
+                    </h3>
+                    <div class="picture" style=" ">
+                        <img class="img-fluid  aboutuspicfirst"
+                             src="{% static '/img/picturesofthevineyards/image3.jpeg'%}"
+                             alt="">
+                    </div>
+                </a>
+
+
+
+
+                <img class="img-fluid logo" src="{% static '/img/logo/logo.png'%}" alt="">
+                <a class="nounderline" href="{% url 'winecoolers' %}">
+                    <h2 class="section-heading section-heading-margin">Our Wine Coolers / Spritzers</h2>
+                    <h3 class="section-subheading text-muted">
+                        Our range of Wine Coolers and Spritzers are unpretentious. Wine Coolers and Spritzers are wine
+                        mixed with fruit
+                        juices /flavours traditionally and we aim to maintain the tradition without adding any extra
+                        alcohol
+                        /neutral
+                        spirit of any type. Our range of these mouth watering and palate pleasing drinks include both
+                        fizz
+                        and the
+                        non-fizz varieties.
+                    </h3>
+                    <div class="picture" style="">
+                        <img class="img-fluid aboutuspicfirst overlay"
+                             src="{% static '/img/picturesofthevineyards/image4.jpeg'%}"
+                             alt="">
+                        <div class="overlay"></div>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+        <div id="pictures">
+            <div class="text-center">
+                <!--                <div class="picture" style="">
+                                    <img class="img-fluid aboutuspic" src="{% static '/img/picturesofthevineyards/image2.jpeg'%}"
+                                         alt="">
+                                </div>
+                                <div class="picture" style=" ">
+                                    <img class="img-fluid aboutuspic" src="{% static '/img/picturesofthevineyards/image3.jpeg'%}"
+                                         alt="">
+                                </div>-->
+
+                <!--                <div class="picture" style="">
+                                    <img class="img-fluid aboutuspic" src="{% static '/img/picturesofthevineyards/image4.jpeg'%}"
+                                         alt="">
+                                </div>-->
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+</section>
+
+
+{% endblock %}
