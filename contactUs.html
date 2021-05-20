@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% load myfilters %}
+{% block body %}
+
+<section class="bg-light" id="portfolio">
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading ">Contact Us</h2>
+                <h3 class="section-subheading ">{{ emailStatus }}</h3>
+            </div>
+        </div>
+        <div class="contact-us-form">
+            <form method="post" class="form-group">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+                <div class="fieldWrapper">
+                    {{ form.from_email.errors }}
+                    {{ form.from_email.label_tag }}
+                    <br/>
+                    {{ form.from_email }}
+                    <!-- <span class="helptext">{{ form.from_email.help_text }}</span>-->
+                </div>
+                <div class="fieldWrapper">
+                    {{ form.subject.errors }}
+                    {{ form.subject.label_tag }}
+                    <br/>
+                    {{ form.subject }}
+                    <!--<span class="helptext">{{ form.subject.help_text }}</span>-->
+                </div>
+                <div class="fieldWrapper">
+                    {{ form.message.errors }}
+                    {{ form.message.label_tag }}
+                    <br/>
+                    {{ form.message }}
+                    <!--<span class="helptext">{{ form.message.help_text }}</span>-->
+                </div>
+                <div class="form-actions">
+                    <button class="btn btn-primary email-button" type="submit">Send Email</button>
+
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
